@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shary Razo, a computer science student and aspiring web developer.">
+  <title>Shary Razo | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Shary Razo home">SR<span>.</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Computer Science Student · Web Developer</p>
+        <h1>I build thoughtful digital experiences.</h1>
+        <p class="hero-description">
+          Hi, I’m <strong>Shary Razo</strong>. I turn ideas into responsive websites and applications using
+          JavaScript, Java, and modern development tools.
+        </p>
+
+
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">See my work</a>
+          <a class="button button-secondary" href="https://github.com/shary16mort" target="_blank">
+           GitHub
+          </a>
+
+          <a class="button button-secondary"
+            href="https://www.linkedin.com/in/shary-razo-37532b401/"
+            target="_blank">
+            LinkedIn
+          </a>
+          <a class="button button-secondary" href="S_Razo.pdf" download>Download résumé</a>
+        </div>
+
+
+
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Shary Razo"</span>,
+  focus: <span class="code-green">"Web Development"</span>,
+  skills: [
+    <span class="code-green">"JavaScript"</span>, <span class="code-green">"Java"</span>,
+    <span class="code-green">"HTML"</span>, <span class="code-green">"CSS"</span>, <span class="code-green">"SQL"</span>
+  ],
+  learning: <span class="code-orange">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Curious, technical, and people-focused.</h2>
+      </div>
+      <div class="about-grid reveal">
+        <p>
+          I’m pursuing a Bachelor of Science in Computer Science at California State University,
+          Los Angeles, with an expected graduation date of May 2027. I enjoy building applications,
+          learning how systems work, and creating technology that feels clear and useful.
+        </p>
+        <p>
+          My background in campus IT support strengthened my troubleshooting and communication skills.
+          I bring that same patience and attention to detail to every development project.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical toolkit</p>
+        <h2>Skills I bring to the table.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span class="skill-number">01</span>
+          <h3>Front End</h3>
+          <p>HTML5, CSS3, JavaScript, responsive design, WebGL</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-number">02</span>
+          <h3>Back End</h3>
+          <p>Java, Spring Boot, JPA/Hibernate, SQL, client-server architecture</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-number">03</span>
+          <h3>Tools & Concepts</h3>
+          <p>Git, GitHub, VS Code, IntelliJ IDEA, OOP, data structures</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-pad">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects that show how I think.</h2>
+        </div>
+
+        <article class="project-feature reveal">
+          <div class="demo-panel">
+            <canvas id="webgl-canvas" width="640" height="420" aria-label="Interactive WebGL diamond"></canvas>
+            <div class="demo-overlay">
+              <span>Live WebGL demo</span>
+              <p>Move the diamond with the arrow keys or WASD.</p>
+              <div class="demo-controls" aria-label="On-screen movement controls">
+                <button type="button" data-direction="up" aria-label="Move up">↑</button>
+                <div>
+                  <button type="button" data-direction="left" aria-label="Move left">←</button>
+                  <button type="button" data-direction="down" aria-label="Move down">↓</button>
+                  <button type="button" data-direction="right" aria-label="Move right">→</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="project-label">Featured Project</p>
+            <h3>Interactive WebGL Graphics</h3>
+            <p>
+              A browser-based graphics application that renders custom geometry and handles real-time
+              keyboard input. The demo uses vertex data, shaders, transformation values, and an animation loop.
+            </p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li>JavaScript</li><li>WebGL 2.0</li><li>GLSL</li><li>HTML</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-row reveal">
+          <div>
+            <p class="project-label">Java Application</p>
+            <h3>Multi-Threaded Server Socket Application</h3>
+          </div>
+          <div>
+            <p>
+              A Java client-server application built with TCP sockets for real-time communication between
+              multiple clients. Multithreading supports concurrent connections while server-side logic manages
+              messages, connections, and data transmission.
+            </p>
+            <ul class="tag-list" aria-label="Project technologies">
+              <li>Java</li><li>TCP Sockets</li><li>Multithreading</li><li>OOP</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I’ve contributed.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Aug 2025 – May 2026</div>
+          <div>
+            <h3>IT Student Assistant</h3>
+            <p class="organization">Cal State LA · College of ECST</p>
+            <p>Supported software deployment, system updates, computer-lab setup, and technical troubleshooting for students and staff.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Jun 2022 – Aug 2025</div>
+          <div>
+            <h3>Youth Development Professional</h3>
+            <p class="organization">Boys & Girls Club · Carson, CA</p>
+            <p>Led educational activities, supported daily operations, and strengthened communication, teamwork, and problem-solving skills.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="section-shell contact-inner reveal">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Have a project or opportunity in mind?</h2>
+        <p>I’m currently open to web-development and software-development opportunities.</p>
+        <a class="button button-light" href="mailto:Srazo11@calstatela.edu">Email me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-inner">
+      <p>© <span id="current-year"></span> Shary Razo</p>
+      <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
